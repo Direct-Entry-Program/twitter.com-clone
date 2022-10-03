@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="img/twitter.2.ico" type="image/x-icon">
+    <title>Twitter-clone</title>
+</head>
+<body>
+    <header> 
+        <div id="header-wrapper">
+            <div>
+                <a href="">
+                    <div id="top-icon" class="icon-wrapper">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="r-1cvl2hr r-4qtqp9 r-yyyyoo r-16y2uox r-8kz0gk r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp"><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path></g></svg></div>
+
+
+                </a>
+                <div id="nav">
+                    <nav id="main-nav">
+                        <li><a href="https://twitter.com/home">
+                                <div class="icon-wrapper">
+                                    <svg  viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M22.58 7.35L12.475 1.897c-.297-.16-.654-.16-.95 0L1.425 7.35c-.486.264-.667.87-.405 1.356.18.335.525.525.88.525.16 0 .324-.038.475-.12l.734-.396 1.59 11.25c.216 1.214 1.31 2.062 2.66 2.062h9.282c1.35 0 2.444-.848 2.662-2.088l1.588-11.225.737.398c.485.263 1.092.082 1.354-.404.263-.486.08-1.093-.404-1.355zM12 15.435c-1.795 0-3.25-1.455-3.25-3.25s1.455-3.25 3.25-3.25 3.25 1.455 3.25 3.25-1.455 3.25-3.25 3.25z"></path></g></svg>
+                                    <span class="header">Home</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="https://twitter.com/explore">
+                                <div class="icon-wrapper">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M21 7.337h-3.93l.372-4.272c.036-.412-.27-.775-.682-.812-.417-.03-.776.27-.812.683l-.383 4.4h-6.32l.37-4.27c.037-.413-.27-.776-.68-.813-.42-.03-.777.27-.813.683l-.382 4.4H3.782c-.414 0-.75.337-.75.75s.336.75.75.75H7.61l-.55 6.327H3c-.414 0-.75.336-.75.75s.336.75.75.75h3.93l-.372 4.272c-.036.412.27.775.682.812l.066.003c.385 0 .712-.295.746-.686l.383-4.4h6.32l-.37 4.27c-.036.413.27.776.682.813l.066.003c.385 0 .712-.295.746-.686l.382-4.4h3.957c.413 0 .75-.337.75-.75s-.337-.75-.75-.75H16.39l.55-6.327H21c.414 0 .75-.336.75-.75s-.336-.75-.75-.75zm-6.115 7.826h-6.32l.55-6.326h6.32l-.55 6.326z"></path></g></svg>
+                                    
+                                    <span class="header">Explore</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="https://twitter.com/notifications">
+                                <div class="icon-wrapper">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M21.697 16.468c-.02-.016-2.14-1.64-2.103-6.03.02-2.532-.812-4.782-2.347-6.335C15.872 2.71 14.01 1.94 12.005 1.93h-.013c-2.004.01-3.866.78-5.242 2.174-1.534 1.553-2.368 3.802-2.346 6.334.037 4.33-2.02 5.967-2.102 6.03-.26.193-.366.53-.265.838.102.308.39.515.712.515h4.92c.102 2.31 1.997 4.16 4.33 4.16s4.226-1.85 4.327-4.16h4.922c.322 0 .61-.206.71-.514.103-.307-.003-.645-.263-.838zM12 20.478c-1.505 0-2.73-1.177-2.828-2.658h5.656c-.1 1.48-1.323 2.66-2.828 2.66zM4.38 16.32c.74-1.132 1.548-3.028 1.524-5.896-.018-2.16.644-3.982 1.913-5.267C8.91 4.05 10.397 3.437 12 3.43c1.603.008 3.087.62 4.18 1.728 1.27 1.285 1.933 3.106 1.915 5.267-.024 2.868.785 4.765 1.525 5.896H4.38z"></path></g></svg>
+                                    <span class="header">Notification</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="https://twitter.com/messages">
+                                <div class="icon-wrapper">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M19.25 3.018H4.75C3.233 3.018 2 4.252 2 5.77v12.495c0 1.518 1.233 2.753 2.75 2.753h14.5c1.517 0 2.75-1.235 2.75-2.753V5.77c0-1.518-1.233-2.752-2.75-2.752zm-14.5 1.5h14.5c.69 0 1.25.56 1.25 1.25v.714l-8.05 5.367c-.273.18-.626.182-.9-.002L3.5 6.482v-.714c0-.69.56-1.25 1.25-1.25zm14.5 14.998H4.75c-.69 0-1.25-.56-1.25-1.25V8.24l7.24 4.83c.383.256.822.384 1.26.384.44 0 .877-.128 1.26-.383l7.24-4.83v10.022c0 .69-.56 1.25-1.25 1.25z"></path></g></svg>
+                                    <span class="header">Messages</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a  href="https://twitter.com/i/bookmarks">
+                                <div class="icon-wrapper">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M19.9 23.5c-.157 0-.312-.05-.442-.144L12 17.928l-7.458 5.43c-.228.164-.53.19-.782.06-.25-.127-.41-.385-.41-.667V5.6c0-1.24 1.01-2.25 2.25-2.25h12.798c1.24 0 2.25 1.01 2.25 2.25v17.15c0 .282-.158.54-.41.668-.106.055-.223.082-.34.082zM12 16.25c.155 0 .31.048.44.144l6.71 4.883V5.6c0-.412-.337-.75-.75-.75H5.6c-.413 0-.75.338-.75.75v15.677l6.71-4.883c.13-.096.285-.144.44-.144z"></path></g></svg>
+                                    <span class="header">Bookmarks</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="https://twitter.com/danulatb/lists">
+                            <div class="icon-wrapper">
+                                <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M19.75 22H4.25C3.01 22 2 20.99 2 19.75V4.25C2 3.01 3.01 2 4.25 2h15.5C20.99 2 22 3.01 22 4.25v15.5c0 1.24-1.01 2.25-2.25 2.25zM4.25 3.5c-.414 0-.75.337-.75.75v15.5c0 .413.336.75.75.75h15.5c.414 0 .75-.337.75-.75V4.25c0-.413-.336-.75-.75-.75H4.25z"></path><path d="M17 8.64H7c-.414 0-.75-.337-.75-.75s.336-.75.75-.75h10c.414 0 .75.335.75.75s-.336.75-.75.75zm0 4.11H7c-.414 0-.75-.336-.75-.75s.336-.75.75-.75h10c.414 0 .75.336.75.75s-.336.75-.75.75zm-5 4.11H7c-.414 0-.75-.335-.75-.75s.336-.75.75-.75h5c.414 0 .75.337.75.75s-.336.75-.75.75z"></path></g></svg>
+                                <span class="header">Lists</span>
+                            </div>
+                            </a>
+                        </li>
+                        <li><a href="https://twitter.com/danulatb">
+                                <div class="icon-wrapper">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M12 11.816c1.355 0 2.872-.15 3.84-1.256.814-.93 1.078-2.368.806-4.392-.38-2.825-2.117-4.512-4.646-4.512S7.734 3.343 7.354 6.17c-.272 2.022-.008 3.46.806 4.39.968 1.107 2.485 1.256 3.84 1.256zM8.84 6.368c.162-1.2.787-3.212 3.16-3.212s2.998 2.013 3.16 3.212c.207 1.55.057 2.627-.45 3.205-.455.52-1.266.743-2.71.743s-2.255-.223-2.71-.743c-.507-.578-.657-1.656-.45-3.205zm11.44 12.868c-.877-3.526-4.282-5.99-8.28-5.99s-7.403 2.464-8.28 5.99c-.172.692-.028 1.4.395 1.94.408.52 1.04.82 1.733.82h12.304c.693 0 1.325-.3 1.733-.82.424-.54.567-1.247.394-1.94zm-1.576 1.016c-.126.16-.316.246-.552.246H5.848c-.235 0-.426-.085-.552-.246-.137-.174-.18-.412-.12-.654.71-2.855 3.517-4.85 6.824-4.85s6.114 1.994 6.824 4.85c.06.242.017.48-.12.654z"></path></g></svg>
+                                    <span class="header">Profile</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li id="more" class="sub-menu">
+                            
+                                <div class="icon-wrapper">
+
+                                        
+                                        <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><circle cx="17" cy="12" r="1.5"></circle><circle cx="12" cy="12" r="1.5"></circle><circle cx="7" cy="12" r="1.5"></circle><path d="M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z"></path></g></svg>
+                                        <span class="header">More</span>
+                                        
+                                        
+                                </div>
+                                        <nav id="more-sub-menu">
+                                            <li>
+                                                    <a href="https://twitter.com/danulatb/topics">
+                                                        <div class="sub-icon-wrapper">
+                                                            <svg viewBox="0 0 24 24" aria-hidden="true" class="r-1kihuf0 r-18jsvk2 r-4qtqp9 r-yyyyoo r-1q142lx r-1472mwg r-mbgqwd r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp" data-testid="icon"><g><path d="M12.003 23.274c-.083 0-.167-.014-.248-.042-.3-.105-.502-.39-.502-.708v-4.14c-2.08-.172-4.013-1.066-5.506-2.56-3.45-3.45-3.45-9.062 0-12.51s9.062-3.45 12.512 0c3.096 3.097 3.45 8.07.82 11.565l-6.49 8.112c-.146.182-.363.282-.587.282zm0-21.05c-1.882 0-3.763.717-5.195 2.15-2.864 2.863-2.864 7.524 0 10.39 1.388 1.387 3.233 2.15 5.195 2.15.414 0 .75.337.75.75v2.72l5.142-6.425c2.17-2.885 1.876-7.014-.696-9.587-1.434-1.43-3.316-2.148-5.197-2.148z"></path><path d="M15.55 8.7h-7.1c-.413 0-.75-.337-.75-.75s.337-.75.75-.75h7.1c.413 0 .75.335.75.75s-.337.75-.75.75zm-3.05 3.238H8.45c-.413 0-.75-.336-.75-.75s.337-.75.75-.75h4.05c.414 0 .75.336.75.75s-.336.75-.75.75z"></path></g></svg>
+                                                            <span class="header-top">Topics</span>
+                                                        </div>
+                                                    </a>
+                                            </li>
+                                            
+                                            <li>
+                                                    <a href="https://twitter.com/i/circles">
+                                                        <div class="sub-icon-wrapper">
+                                                            <svg viewBox="0 0 24 24" aria-hidden="true" class="r-1kihuf0 r-18jsvk2 r-4qtqp9 r-yyyyoo r-1q142lx r-1472mwg r-mbgqwd r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp" data-testid="icon"><g><path d="M14.14 5.846c-.386-2.882-2.15-4.6-4.72-4.6s-4.336 1.722-4.72 4.6C4.144 10 5.776 11.6 9.42 11.6c3.648 0 5.28-1.6 4.72-5.754zM9.42 10.1c-2.68 0-3.677-.746-3.232-4.048.165-1.236.802-3.3 3.233-3.3V2.75c2.43 0 3.07 2.065 3.235 3.297.45 3.353-.605 4.053-3.234 4.053zm2.9 11.092c0-.414-.335-.75-.75-.75H3.218c-.39.012-.714-.294-.727-.683-.003-.085.01-.17.037-.248.722-2.9 3.646-5.126 7.515-4.9.41.014.76-.298.79-.707.024-.413-.293-.767-.706-.79-4.675-.253-8.174 2.494-9.055 6.038-.325 1.17.36 2.384 1.53 2.71.2.056.408.083.617.08h8.352c.413 0 .75-.336.75-.75v-.003.002zm9.427-7.469c-1.272-1.054-3.157-.878-4.212.394-.606-.733-1.525-1.133-2.474-1.08-1.648.095-2.908 1.508-2.814 3.156 0 3.373 3.876 6.78 5.3 6.807 1.397-.026 5.276-3.434 5.278-6.807.053-.948-.347-1.864-1.077-2.47zM17.565 21.5c-.72-.107-3.82-2.763-3.82-5.307-.012-.875.65-1.61 1.52-1.693.696 0 1.092.488 1.656 1.278.04.05.083.092.132.13.34.267.83.21 1.095-.13.565-.795.953-1.278 1.653-1.278.87.08 1.534.818 1.522 1.693 0 2.546-3.096 5.198-3.757 5.308z"></path></g></svg>
+                                                            <span class="header-top">Twitter Circle</span>
+                                                        </div>
+                                                    </a>
+                                            </li>
+                                            <li>
+                                                
+                                                    <div class="sub-icon-wrapper">
+                                                        <span class="sub-header">Creator Studio</span>
+                                                        <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-1xvli5t r-19u6a5r r-dnmrzs r-bnwqim r-1plcrui r-wfqgy4 r-lrvibr" data-testid="accordion-chevron"><g><path d="M20.207 8.147c-.39-.39-1.023-.39-1.414 0L12 14.94 5.207 8.147c-.39-.39-1.023-.39-1.414 0-.39.39-.39 1.023 0 1.414l7.5 7.5c.195.196.45.294.707.294s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.022 0-1.413z"></path></g></svg>
+                                                    </div>
+                                                
+                                                    <nav id="sub-menu-creator-studio" class="inner-sub-menu">
+                                                        <li><a href="https://twitter.com/i/moment_maker">
+                                                            <div class="icon-wrapper">
+                                                                <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-1q142lx r-1xvli5t r-1b7u577 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr" data-testid="icon"><g><path d="M8.98 22.698c-.103 0-.205-.02-.302-.063-.31-.135-.49-.46-.44-.794l1.228-8.527H6.542c-.22 0-.43-.098-.573-.266-.144-.17-.204-.393-.167-.61L7.49 2.5c.062-.36.373-.625.74-.625h6.81c.23 0 .447.105.59.285.142.18.194.415.14.64l-1.446 6.075H19c.29 0 .553.166.678.428.124.262.087.57-.096.796L9.562 22.42c-.146.18-.362.276-.583.276zM7.43 11.812h2.903c.218 0 .425.095.567.26.142.164.206.382.175.598l-.966 6.7 7.313-8.995h-4.05c-.228 0-.445-.105-.588-.285-.142-.18-.194-.415-.14-.64l1.446-6.075H8.864L7.43 11.812z"></path></g></svg>
+                                                                <span class="sub-list">Moments</span>
+                                                            </div>
+                                                            </a>
+                                                        
+                                                        </li>
+                                                        <li><a href="https://twitter.com/i/newsletters">
+                                                            <div class="icon-wrapper">
+                                                                <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-1q142lx r-1xvli5t r-1b7u577 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr" data-testid="icon"><g><path d="M14 11.25H6c-.414 0-.75.336-.75.75s.336.75.75.75h8c.414 0 .75-.336.75-.75s-.336-.75-.75-.75zm0-4H6c-.414 0-.75.336-.75.75s.336.75.75.75h8c.414 0 .75-.336.75-.75s-.336-.75-.75-.75zm-3.25 8H6c-.414 0-.75.336-.75.75s.336.75.75.75h4.75c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z"></path><path d="M21.5 11.25h-3.25v-7C18.25 3.01 17.24 2 16 2H4C2.76 2 1.75 3.01 1.75 4.25v15.5C1.75 20.99 2.76 22 4 22h15.5c1.517 0 2.75-1.233 2.75-2.75V12c0-.414-.336-.75-.75-.75zm-18.25 8.5V4.25c0-.413.337-.75.75-.75h12c.413 0 .75.337.75.75v15c0 .452.12.873.315 1.25H4c-.413 0-.75-.337-.75-.75zm16.25.75c-.69 0-1.25-.56-1.25-1.25v-6.5h2.5v6.5c0 .69-.56 1.25-1.25 1.25z"></path></g></svg>
+                                                                <span class="sub-list">Newsletters</span>
+                                                            </div>
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="https://analytics.twitter.com/">
+                                                            <div class="icon-wrapper">
+                                                                <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-1q142lx r-1xvli5t r-1b7u577 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr" data-testid="icon"><g><path d="M12 22c-.414 0-.75-.336-.75-.75V2.75c0-.414.336-.75.75-.75s.75.336.75.75v18.5c0 .414-.336.75-.75.75zm5.14 0c-.415 0-.75-.336-.75-.75V7.89c0-.415.335-.75.75-.75s.75.335.75.75v13.36c0 .414-.337.75-.75.75zM6.86 22c-.413 0-.75-.336-.75-.75V10.973c0-.414.337-.75.75-.75s.75.336.75.75V21.25c0 .414-.335.75-.75.75z"></path></g></svg>
+                                                                <span class="sub-list">Analytics</span>
+                                                            </div>    
+                                                            </a>
+                                                        </li>
+                                                        
+                                                    </nav>
+                                                
+                                                   
+                                            </li>
+                                            <li>
+                                                
+                                                    <div class="sub-icon-wrapper">
+                                                        <span class="sub-header">Professional Tools</span>
+                                                        <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-1xvli5t r-19u6a5r r-dnmrzs r-bnwqim r-1plcrui r-wfqgy4 r-lrvibr" data-testid="accordion-chevron"><g><path d="M20.207 8.147c-.39-.39-1.023-.39-1.414 0L12 14.94 5.207 8.147c-.39-.39-1.023-.39-1.414 0-.39.39-.39 1.023 0 1.414l7.5 7.5c.195.196.45.294.707.294s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.022 0-1.413z"></path></g></svg>
+                                                    </div>
+                                                
+                                                    <nav id="sub-menu-professional-tools" class="inner-sub-menu">
+                                                        <li><a href="https://twitter.com/i/flow/convert_to_professional">
+                                                                <div class="icon-wrapper">
+                                                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-1q142lx r-1xvli5t r-1b7u577 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr" data-testid="icon"><g><path d="M6.016 16.97l-1.53 1.53c-.15.14-.34.22-.53.22s-.38-.08-.53-.22c-.29-.29-.29-.77 0-1.06l1.53-1.54c.3-.29.77-.29 1.06 0 .3.3.3.77 0 1.07zm2.12 2.12l-3.64 3.64c-.15.15-.34.22-.53.22s-.38-.07-.53-.22c-.29-.29-.29-.77 0-1.06l3.64-3.64c.3-.3.77-.3 1.06 0 .3.29.3.76 0 1.06z"></path><path d="M22.306 1.49c-.28-.28-.66-.44-1.06-.44 0 0-.09 0-.13.01-4.31.38-8.37 2.32-11.4 5.45h-.01c-2.68.54-5.12 1.86-7.09 3.84l-.93.93c-.46.47-.57 1.18-.27 1.76.27.5.78.8 1.33.8.09 0 .18-.01.27-.03l3.98-.73c.59.97 2.26 2.87 3.82 3.78l-.73 4.05c-.12.64.2 1.29.78 1.59.22.12.46.17.69.17.4 0 .78-.15 1.07-.44l.94-.94c1.96-1.99 3.27-4.48 3.8-7.21l.07-.06c0-.01.04-.04.04-.05 3.01-3.03 4.88-7.04 5.27-11.29.04-.44-.12-.88-.44-1.19zm-5.89 11.43c-.15.14-.3.28-.44.42v.02c-.41 2.6-1.63 5-3.48 6.87l-.93.94.88-4.89c.04-.22-.08-.42-.28-.52-1.03-.5-3.65-2.87-4.12-3.97-.09-.23-.32-.37-.56-.33l-4.74.88.93-.94c1.85-1.85 4.23-3.09 6.79-3.5.14-.17.3-.33.46-.48 2.88-2.9 6.55-4.53 10.32-4.87-.34 3.77-1.95 7.47-4.83 10.37z"></path><path d="M17.546 6.36c-.88-.88-2.3-.88-3.18 0s-.88 2.31 0 3.18c.88.88 2.3.88 3.18 0 .88-.87.88-2.3 0-3.18zm-1.06 2.12c-.29.3-.77.3-1.06 0-.29-.29-.29-.77 0-1.06.29-.29.77-.29 1.06 0s.29.77 0 1.06z"></path></g></svg>
+                                                                    <span class="sub-list">Twitter for Professionals</span>
+                                                                </div>  
+                                                            </a>
+                                                        </li>
+                                                        <li><a href="https://ads.twitter.com/?ref=gl-tw-tw-twitter-ads-rweb">
+                                                                <div class="icon-wrapper">
+                                                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-1q142lx r-1xvli5t r-1b7u577 r-dnmrzs r-bnwqim r-1plcrui r-lrvibr" data-testid="icon"><g><path d="M20.75 22H3.25C2.01 22 1 20.99 1 19.75V4.25C1 3.01 2.01 2 3.25 2h17.5C21.99 2 23 3.01 23 4.25v15.5c0 1.24-1.01 2.25-2.25 2.25zM3.25 3.5c-.414 0-.75.337-.75.75v15.5c0 .413.336.75.75.75h17.5c.414 0 .75-.337.75-.75V4.25c0-.413-.336-.75-.75-.75H3.25z"></path><path d="M16.758 6.982h-5.806c-.414 0-.75.336-.75.75s.336.75.75.75h3.995L6.92 16.508c-.292.293-.292.768 0 1.06.147.147.34.22.53.22s.385-.072.53-.22l8.027-8.025v3.995c0 .414.336.75.75.75s.75-.336.75-.75V7.732c0-.414-.335-.75-.75-.75z"></path></g></svg>
+                                                                    <span class="sub-list">Twitter Ads</span>
+                                                                </div> 
+                                                            </a>
+                                                        </li>  
+                                                    </nav>
+                                                
+                                                 
+                                            </li>
+                                            <li>
+
+                                                
+                                                    <div class="sub-icon-wrapper">
+                                                        <span class="sub-header">Settings and Support</span>
+                                                        <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-1xvli5t r-19u6a5r r-dnmrzs r-bnwqim r-1plcrui r-wfqgy4 r-lrvibr" data-testid="accordion-chevron"><g><path d="M20.207 8.147c-.39-.39-1.023-.39-1.414 0L12 14.94 5.207 8.147c-.39-.39-1.023-.39-1.414 0-.39.39-.39 1.023 0 1.414l7.5 7.5c.195.196.45.294.707.294s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.022 0-1.413z"></path></g></svg>
+                                                    </div>
+                                                
+                                                    <nav id="sub-menu-settings-and-support" class="inner-sub-menu">
+                                                        <li><a href="https://twitter.com/settings"></a>xx</li>
+                                                        <li><a href="https://support.twitter.com/"></a>xx</li>
+                                                        <li><a href="https://twitter.com/i/display"></a>xx</li>
+                                                        <li><a href="https://twitter.com/i/keyboard_shortcuts"></a>xx</li>
+                                                    </nav>
+                                                
+                                                 
+                                               
+                                            </li>
+                                        </nav>
+                            
+                        </li>
+                    </nav>
+                </div>
+                <div id="bot-button" >
+                    <a href="https://twitter.com/compose/tweet">
+                        <div>Tweet</div>
+                    </a>
+
+                </div>
+
+                <div id="bot-button-round" >
+                    <a href="https://twitter.com/compose/tweet">
+                        <div><svg viewBox="0 0 24 24" aria-hidden="true" class="r-jwli3a r-4qtqp9 r-yyyyoo r-1472mwg r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp"><g><path d="M8.8 7.2H5.6V3.9c0-.4-.3-.8-.8-.8s-.7.4-.7.8v3.3H.8c-.4 0-.8.3-.8.8s.3.8.8.8h3.3v3.3c0 .4.3.8.8.8s.8-.3.8-.8V8.7H9c.4 0 .8-.3.8-.8s-.5-.7-1-.7zm15-4.9v-.1h-.1c-.1 0-9.2 1.2-14.4 11.7-3.8 7.6-3.6 9.9-3.3 9.9.3.1 3.4-6.5 6.7-9.2 5.2-1.1 6.6-3.6 6.6-3.6s-1.5.2-2.1.2c-.8 0-1.4-.2-1.7-.3 1.3-1.2 2.4-1.5 3.5-1.7.9-.2 1.8-.4 3-1.2 2.2-1.6 1.9-5.5 1.8-5.7z"></path></g></svg></div>
+                    </a>
+
+                </div>
+            </div>
+            <div></div>
+            <div id="profile-row">
+                <div>
+                    <div id="pro-pic"><svg viewBox="0 0 24 24" aria-hidden="true" class="r-1cvl2hr r-4qtqp9 r-yyyyoo r-16y2uox r-8kz0gk r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp"><g><path d="M23.643 4.937c-.835.37-1.732.62-2.675.733.962-.576 1.7-1.49 2.048-2.578-.9.534-1.897.922-2.958 1.13-.85-.904-2.06-1.47-3.4-1.47-2.572 0-4.658 2.086-4.658 4.66 0 .364.042.718.12 1.06-3.873-.195-7.304-2.05-9.602-4.868-.4.69-.63 1.49-.63 2.342 0 1.616.823 3.043 2.072 3.878-.764-.025-1.482-.234-2.11-.583v.06c0 2.257 1.605 4.14 3.737 4.568-.392.106-.803.162-1.227.162-.3 0-.593-.028-.877-.082.593 1.85 2.313 3.198 4.352 3.234-1.595 1.25-3.604 1.995-5.786 1.995-.376 0-.747-.022-1.112-.065 2.062 1.323 4.51 2.093 7.14 2.093 8.57 0 13.255-7.098 13.255-13.254 0-.2-.005-.402-.014-.602.91-.658 1.7-1.477 2.323-2.41z"></path></g></svg></div>
+                    <div class="hide-name">
+                        <div>
+                        <span id="user-name">Danula Balasooriya</span><br><span id="user-tag">@danulatb</span>
+                        </div>
+                    </div>
+                    <div class="hide-name">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-bnwqim r-1plcrui r-lrvibr"><g><circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle></g></svg>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        
+    </header>
+
+    <main>
+
+        <nav id="bot-nav">
+        
+           
+                <nav id="main-nav-bot">
+                    <li><a href="https://twitter.com/home">
+                            <div>
+                                <svg  viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M22.58 7.35L12.475 1.897c-.297-.16-.654-.16-.95 0L1.425 7.35c-.486.264-.667.87-.405 1.356.18.335.525.525.88.525.16 0 .324-.038.475-.12l.734-.396 1.59 11.25c.216 1.214 1.31 2.062 2.66 2.062h9.282c1.35 0 2.444-.848 2.662-2.088l1.588-11.225.737.398c.485.263 1.092.082 1.354-.404.263-.486.08-1.093-.404-1.355zM12 15.435c-1.795 0-3.25-1.455-3.25-3.25s1.455-3.25 3.25-3.25 3.25 1.455 3.25 3.25-1.455 3.25-3.25 3.25z"></path></g></svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="https://twitter.com/explore">
+                            <div>
+                                <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M21 7.337h-3.93l.372-4.272c.036-.412-.27-.775-.682-.812-.417-.03-.776.27-.812.683l-.383 4.4h-6.32l.37-4.27c.037-.413-.27-.776-.68-.813-.42-.03-.777.27-.813.683l-.382 4.4H3.782c-.414 0-.75.337-.75.75s.336.75.75.75H7.61l-.55 6.327H3c-.414 0-.75.336-.75.75s.336.75.75.75h3.93l-.372 4.272c-.036.412.27.775.682.812l.066.003c.385 0 .712-.295.746-.686l.383-4.4h6.32l-.37 4.27c-.036.413.27.776.682.813l.066.003c.385 0 .712-.295.746-.686l.382-4.4h3.957c.413 0 .75-.337.75-.75s-.337-.75-.75-.75H16.39l.55-6.327H21c.414 0 .75-.336.75-.75s-.336-.75-.75-.75zm-6.115 7.826h-6.32l.55-6.326h6.32l-.55 6.326z"></path></g></svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="https://twitter.com/notifications">
+                            <div>
+                                <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M21.697 16.468c-.02-.016-2.14-1.64-2.103-6.03.02-2.532-.812-4.782-2.347-6.335C15.872 2.71 14.01 1.94 12.005 1.93h-.013c-2.004.01-3.866.78-5.242 2.174-1.534 1.553-2.368 3.802-2.346 6.334.037 4.33-2.02 5.967-2.102 6.03-.26.193-.366.53-.265.838.102.308.39.515.712.515h4.92c.102 2.31 1.997 4.16 4.33 4.16s4.226-1.85 4.327-4.16h4.922c.322 0 .61-.206.71-.514.103-.307-.003-.645-.263-.838zM12 20.478c-1.505 0-2.73-1.177-2.828-2.658h5.656c-.1 1.48-1.323 2.66-2.828 2.66zM4.38 16.32c.74-1.132 1.548-3.028 1.524-5.896-.018-2.16.644-3.982 1.913-5.267C8.91 4.05 10.397 3.437 12 3.43c1.603.008 3.087.62 4.18 1.728 1.27 1.285 1.933 3.106 1.915 5.267-.024 2.868.785 4.765 1.525 5.896H4.38z"></path></g></svg> 
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="https://twitter.com/messages">
+                            <div>
+                                <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-lwhw9o r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-cnnz9e"><g><path d="M19.25 3.018H4.75C3.233 3.018 2 4.252 2 5.77v12.495c0 1.518 1.233 2.753 2.75 2.753h14.5c1.517 0 2.75-1.235 2.75-2.753V5.77c0-1.518-1.233-2.752-2.75-2.752zm-14.5 1.5h14.5c.69 0 1.25.56 1.25 1.25v.714l-8.05 5.367c-.273.18-.626.182-.9-.002L3.5 6.482v-.714c0-.69.56-1.25 1.25-1.25zm14.5 14.998H4.75c-.69 0-1.25-.56-1.25-1.25V8.24l7.24 4.83c.383.256.822.384 1.26.384.44 0 .877-.128 1.26-.383l7.24-4.83v10.022c0 .69-.56 1.25-1.25 1.25z"></path></g></svg>
+                            </div>
+                        </a>
+                    </li>
+                    
+                   
+                </nav>
+
+
+        </nav>
+
+        <div id="main-wrapper">
+            <div id="main-content">
+                <div id="head-home">
+                    <span>Home</span>
+                        <div class="overlay">
+
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-z80fyv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-19wmn03"><g><path d="M22.772 10.506l-5.618-2.192-2.16-6.5c-.102-.307-.39-.514-.712-.514s-.61.207-.712.513l-2.16 6.5-5.62 2.192c-.287.112-.477.39-.477.7s.19.585.478.698l5.62 2.192 2.16 6.5c.102.306.39.513.712.513s.61-.207.712-.513l2.16-6.5 5.62-2.192c.287-.112.477-.39.477-.7s-.19-.585-.478-.697zm-6.49 2.32c-.208.08-.37.25-.44.46l-1.56 4.695-1.56-4.693c-.07-.21-.23-.38-.438-.462l-4.155-1.62 4.154-1.622c.208-.08.37-.25.44-.462l1.56-4.693 1.56 4.694c.07.212.23.382.438.463l4.155 1.62-4.155 1.622zM6.663 3.812h-1.88V2.05c0-.414-.337-.75-.75-.75s-.75.336-.75.75v1.762H1.5c-.414 0-.75.336-.75.75s.336.75.75.75h1.782v1.762c0 .414.336.75.75.75s.75-.336.75-.75V5.312h1.88c.415 0 .75-.336.75-.75s-.335-.75-.75-.75zm2.535 15.622h-1.1v-1.016c0-.414-.335-.75-.75-.75s-.75.336-.75.75v1.016H5.57c-.414 0-.75.336-.75.75s.336.75.75.75H6.6v1.016c0 .414.335.75.75.75s.75-.336.75-.75v-1.016h1.098c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z"></path></g></svg>
+                        </div>
+                </div>
+
+                <div id="content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, repellat nihil consequuntur ipsam eligendi adipisci incidunt asperiores sunt expedita accusamus explicabo aut quidem. Deserunt vel laborum ipsam harum, omnis culpa?
+                    Unde quis ea amet quos animi nisi saepe rerum natus quam eligendi, dolores provident iste. Provident nisi a nihil rem eius animi cumque eligendi consequuntur ipsam vitae. Ad, minima rerum.
+                    Veritatis optio delectus quod facere explicabo mollitia fugiat, voluptatem eveniet a, omnis accusantium velit ullam quia quis. Tenetur, molestias? Accusantium quisquam vero dicta sapiente maxime praesentium doloribus inventore voluptas cum?
+                    Obcaecati quasi maiores inventore maxime doloremque temporibus mollitia recusandae corporis voluptas exercitationem. Dicta quaerat exercitationem, minima ipsum illum at nostrum corporis. Reprehenderit magnam ipsum animi perferendis assumenda harum id? Fugiat?
+                    Ea ipsum voluptates aperiam officia quas alias, eius perspiciatis ullam. Corrupti tempora iusto dolor alias necessitatibus assumenda incidunt quidem iure, neque non tenetur nam culpa eveniet reiciendis nisi quas veniam!
+                    Dolor eos iure asperiores, obcaecati doloremque eligendi nesciunt delectus maxime totam! Odit consequatur pariatur eius quis temporibus recusandae tempora optio nam sequi aliquid dolores doloribus ipsam quia fugit, eum veniam?
+                    Nulla, iste ipsa, blanditiis laudantium doloribus corrupti exercitationem, esse cupiditate officia ab aliquam iure. Ipsum at mollitia perspiciatis nemo exercitationem vero similique minima odio voluptas, perferendis cupiditate veritatis hic fugiat.
+                    Accusantium neque facere repellat explicabo, aspernatur nobis architecto error vitae quos quisquam obcaecati totam deleniti dolor! Obcaecati animi assumenda asperiores architecto! Saepe neque provident eius corporis at. Unde, illo perspiciatis!
+                    Laudantium tempora libero expedita. Consequatur dicta similique doloribus iusto. A vitae placeat laboriosam illum harum magni! Molestias dolorum, dolorem voluptatibus fugit minus maxime inventore, quidem magnam, explicabo facilis saepe neque?
+                    Magni neque sit vero deserunt molestias tempore animi nostrum pariatur, quo, dignissimos recusandae expedita libero quidem! Autem odit sunt accusantium quia amet nihil officiis nisi, corrupti placeat, nulla fuga? Quam.
+                    Natus eum sequi, placeat voluptates sunt officiis doloribus rerum dignissimos praesentium, dolor commodi velit nobis! Eum voluptates deleniti aspernatur veniam? Itaque cum deleniti obcaecati fugit architecto id, ipsa quae laboriosam.
+                    Fuga doloremque eaque voluptas ea optio. Numquam quia aut a autem voluptate nostrum aspernatur, voluptas ea nemo architecto hic eligendi et labore. Reiciendis cupiditate consequatur sapiente quibusdam delectus soluta illum.
+                    Minima asperiores aspernatur nisi hic repellat, commodi incidunt quae iusto harum id similique. Esse magnam reiciendis nobis ullam, iure laboriosam. Ipsum ducimus minima amet alias. Qui facere deserunt animi maxime!
+                    Cumque expedita eum corporis in dignissimos animi praesentium exercitationem voluptatibus, ullam iste, autem et quo sapiente quae, odit maiores. Fuga, nemo est quibusdam expedita sed minus similique dolorem aliquid minima.
+                    Corrupti dolore autem animi? Commodi cupiditate consectetur sint earum nulla ab inventore praesentium, accusantium eos minima obcaecati ipsum officia velit non voluptatum a, enim quis laboriosam natus? Laborum, cupiditate aliquid?
+                    Minus adipisci, sunt hic nihil sapiente atque animi. Excepturi ad, fuga facilis velit illum ratione repellat quia aut, quo, labore saepe iure incidunt nulla cum repudiandae ducimus. Quos, repellendus eaque!
+                    Neque quam libero ipsum, velit facere nobis alias laborum quidem cumque tenetur, nisi hic illum mollitia iure quibusdam accusamus consectetur quod exercitationem molestiae, vel perferendis! Magnam quibusdam modi quod repudiandae!
+                    Excepturi ipsam cupiditate corporis doloribus, magni non praesentium aliquid voluptatem cumque similique eos. Ut repellat nesciunt nemo asperiores, blanditiis impedit. Modi itaque nostrum, aliquam magni provident harum minus explicabo unde.
+                    Nisi, aliquam, dolore omnis accusamus quam perspiciatis eligendi rerum neque repellendus exercitationem illum tempora consectetur non unde animi, consequuntur a sapiente cum quasi! Nostrum, soluta? Veritatis harum eum magni dolorem!
+                    Dolore, nobis ullam! Velit quo nulla quis, vitae, quibusdam fugit nostrum iusto optio unde voluptatibus quos esse, porro alias accusantium? Iusto sapiente non distinctio explicabo voluptatem quam iure. Perferendis, totam.
+                    Unde, a explicabo neque vitae modi, officiis iure ad eligendi nulla blanditiis deserunt dolor aperiam iusto veniam tempore harum, ab accusantium ullam molestiae! Dolor, neque illo? Exercitationem distinctio pariatur expedita.
+                    Iusto aliquam quia fugit voluptas suscipit officia nulla illo saepe, nemo modi? Quod numquam, beatae accusamus in optio illum pariatur consectetur debitis, quo sit aliquam minus laboriosam deleniti unde voluptates.
+                    Facilis possimus dolores officia harum, iusto nulla sed soluta aperiam tenetur sint id odit ipsum provident quia modi eos illo, dolorem earum necessitatibus. Esse enim minima, quo unde perspiciatis delectus.
+                    Qui fugit reiciendis ad, illum voluptatum ea nobis saepe maxime, cumque, pariatur voluptatem ab? Exercitationem, similique quae repellendus dolores impedit, itaque rerum ad, sint ex alias excepturi iure eos culpa?
+                    Sequi earum hic, quos inventore quasi eaque neque ipsa eveniet, ratione provident velit doloremque blanditiis labore veritatis molestiae incidunt animi reprehenderit iusto ut modi non officiis dolorem aut. Maiores, exercitationem?
+                    Perferendis, iusto. Aliquam illum atque amet unde tempora doloribus nemo laborum? Deleniti, fugiat facilis et magni inventore accusamus quaerat enim quis ipsum, cumque non libero quisquam nulla dolorem temporibus recusandae?
+                    Repellat cumque molestias autem voluptates totam eum dolorem iste, consectetur dolorum repudiandae explicabo a tempora tenetur suscipit quidem voluptatem sint officia quasi similique ducimus nulla ad magni perspiciatis earum. Nobis.
+                    Quisquam facere illum dolore necessitatibus sit laboriosam ipsum iusto iure id, itaque iste atque temporibus, deleniti debitis rerum quas odio. Expedita eaque porro officiis qui dolores, exercitationem sint ipsa consequuntur?
+                    Modi nesciunt repellendus quod magni ut laboriosam ullam fugit iusto porro, sit eaque est dolorum suscipit tempore quo placeat animi. Blanditiis beatae dolorum corrupti odit molestiae repellat ullam? Ab, cumque.
+                    Nulla placeat beatae iusto commodi aliquid consectetur repellendus sit laboriosam ipsa repellat ipsam accusantium eum doloremque debitis culpa sed voluptates sequi, nesciunt porro tempora impedit totam ea, neque repudiandae? Totam.
+                    Ipsa laborum porro, sapiente veritatis maxime distinctio non mollitia aliquid in modi. Doloribus debitis reiciendis repellendus quisquam inventore, itaque impedit voluptates, accusamus delectus ullam perferendis sit laborum nam quidem nobis!
+                    Nulla molestiae minus impedit qui aliquid repudiandae. Amet eligendi possimus error perspiciatis perferendis laudantium nobis optio maiores enim nemo voluptatem obcaecati, impedit repellendus eos, suscipit, numquam quasi aspernatur fugiat ipsam!
+                    Quas magni illum, libero maxime ducimus recusandae rerum harum incidunt error dolor sapiente hic quod quam, neque nihil unde fugiat aliquid similique. Optio pariatur ipsa nihil maiores ducimus. Eligendi, nemo.
+                    Porro ratione libero at nemo laborum non ipsa tenetur adipisci quam fuga iusto sint dolor mollitia, perspiciatis deleniti modi tempore iste quas, magnam temporibus iure quos harum soluta? Ipsa, quasi.
+                    Corrupti odit suscipit vel alias vero nobis illum voluptates voluptate non optio, dicta natus aperiam aut ratione velit veritatis. Assumenda et rerum perspiciatis eaque pariatur voluptas, itaque maiores iusto nesciunt!
+                    Voluptates, qui! Ad asperiores culpa, ut ea numquam ducimus dolores voluptate beatae quos, corporis rem architecto veritatis facere sequi rerum blanditiis magnam officia officiis quas! Fugit doloremque quod ipsum aliquam.
+                    Unde, eos excepturi officia voluptatum cupiditate corrupti optio nam similique iusto fugit quos libero esse quisquam aliquid deleniti, soluta voluptas delectus! Unde numquam pariatur mollitia tenetur, ratione expedita consequatur harum!
+                    Corporis assumenda, aliquid iste dolore illo ut maiores! Ratione aperiam numquam, dolorum quam, modi, vel aspernatur suscipit maiores sunt ducimus laudantium. Libero doloremque pariatur consequuntur. Aliquid rerum laborum nostrum in.
+                    Sunt officia adipisci perspiciatis omnis provident vitae iusto temporibus obcaecati voluptatibus placeat labore, laudantium magnam voluptates culpa sapiente nam voluptas quam, consequatur veniam commodi similique. Dolores et omnis iure impedit.
+                    Nemo, corporis. Quo, esse veniam facere reiciendis deserunt magnam illum dignissimos quod dolores fugit quibusdam repellat aut ad quas repellendus consectetur voluptas aperiam praesentium sapiente nemo corporis non minima pariatur!
+                </div>
+
+                
+            </div>
+            <div id="search-content">
+                <div id="search-head">
+                    <div>
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="r-14j79pv r-4qtqp9 r-yyyyoo r-1xvli5t r-dnmrzs r-4wgw6l r-f727ji r-bnwqim r-1plcrui r-lrvibr"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+                    </div>
+                    <div id="search-bar">
+                        <input id="search" type="text" title="test" value="Search Twitter"/>
+                    </div>
+                </div>
+                
+                
+                <div id="trends" class="trends">
+                    <ul>
+                        <span>Trends for you</span>
+                        <li>trend</li>
+                        <li>trend</li>
+                        <li>trend</li>
+                        <li>trend</li>
+                        <li>trend</li>
+                        <li>trend</li>
+                        <li>trend</li>
+                        <li>trend</li>
+                        <li>trend</li>
+                        <li>trend</li>
+                    </ul>
+                </div>
+
+
+                <div class="trends">
+                    <ul>
+                        <span>Who to follow</span>
+                        <li>trend</li>
+                        <li>trend</li>
+                        <li>trend</li>
+                        <li>trend</li>
+                        
+                    </ul>
+                </div>
+                
+            
+            
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>
